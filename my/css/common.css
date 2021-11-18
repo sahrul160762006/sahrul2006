@@ -50,7 +50,7 @@ width: 100vw;
 /*隠すため（実際はjsで高さ計算）
 height: 120vh;*/
 background: #001050;
-/*background: url("/eximages/2021/images/borderbg.png") #001567;
+/*background: url("/my/img/borderbg.png") #001567;
 background-size: 8px;*/
 }
 #loader{
@@ -113,7 +113,7 @@ cursor: pointer;
 opacity: 1;
 width: 15vw;
 height: 15vw;
-background: url("/eximages/2021/images/btn_close2.png") center center no-repeat;
+background: url("/my/img/btn_close2.png") center center no-repeat;
 background-size: 15vw 15vw;
 -webkit-transition: all 0.2s ease-in-out;
 transition: all 0.2s ease-in-out;
@@ -177,7 +177,7 @@ right: 20px;
 top: 20px;
 width: 100px;
 height: 100px;
-background: url("/eximages/2021/images/btn_close2.png") center center no-repeat;
+background: url("/my/img/btn_close2.png") center center no-repeat;
 background-size: 100px 100px;
 }
 .newMark{
