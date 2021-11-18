@@ -57,7 +57,7 @@ display: none;
 
 #d1:before,#d1:after,
 #d2:before,#d2:after{
-	background-image:url("/eximages/2021/assets_sub/star.png");
+	background-image:url("/my/img/star.png");
 	content:"";
 	-webkit-animation:36s warp linear infinite;
 	-moz-animation:36s warp linear infinite;
