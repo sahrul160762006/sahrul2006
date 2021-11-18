@@ -23,7 +23,7 @@ left: 0;
 #bgFix:before{
 content:"";
 overflow:hidden;
-background:url("/eximages/2021/assets_sub/space.jpg") center center;
+background:url("/my/img/space.jpg") center center;
 background-size: cover;
 width: 100vw;
 height: 100vh;
@@ -65,7 +65,7 @@ overflow: hidden;
 }
 #cts:after{
 content:"";
-background:url("/eximages/2021/assets_sub/fade_head.png") center top no-repeat, url("/eximages/2021/assets_sub/fade_foot.png") center bottom no-repeat;
+background:url("/my/img/fade_head.png") center top no-repeat, url("/my/img/fade_foot.png") center bottom no-repeat;
 background-size: 100vw 25vw, 100vw 25vw;
 width: 100vw;
 height: 100vh;
@@ -205,7 +205,7 @@ z-index: 10;
 #menuSP a,
 #menuSPfooter a{
 display: inline-block;
-background: url("/eximages/2021/assets_sub/menu_b_sp.png") center center no-repeat;
+background: url("/my/img/menu_b_sp.png") center center no-repeat;
 background-size: 100%;
 width: 47vw;
 height: 14.54vw;
@@ -243,7 +243,7 @@ margin: 20vw auto 0vw auto;
 #menuSPhm{
 width: 14vw;
 height: 16.935vw;
-background: url("/eximages/2021/assets_sub/menu_sp.png") top center no-repeat;
+background: url("/my/img/menu_sp.png") top center no-repeat;
 background-size: 100%;
 position: fixed;
 top:3.2vw;
@@ -284,7 +284,7 @@ margin: 0 auto 7vw auto;
 width: 42vw;
 width: 48vw;
 box-sizing: border-box;
-background: url("/eximages/2021/assets_sub/h1border_sp.png") center 62% no-repeat;
+background: url("/my/img/h1border_sp.png") center 62% no-repeat;
 background-size: 100%;
 font-family: 'Audiowide', cursive;
 color: #FFF;
@@ -318,7 +318,7 @@ dl img,.ctsWaku img{
 width: 100%;
 }
 dt,dd,.ctsWakuLoop{
-background: url("/eximages/2021/assets_sub/waku_m_sp.png") center center repeat-y;
+background: url("/my/img/waku_m_sp.png") center center repeat-y;
 background-size: 100%;
 padding: 0 10vw;
 color: #0e61c6;
@@ -380,13 +380,13 @@ margin-bottom: 1em;
 }
 .ttlHR{
 width: 100%;
-background: url("/eximages/2021/assets_sub/hr_border.png") center repeat-x;
+background: url("/my/img/hr_border.png") center repeat-x;
 background-size: 2vw;
 height: 4vw;
 }
 hr{
 width: 100%;
-background: url("/eximages/2021/assets_sub/hr_border.png") center repeat-x;
+background: url("/my/img/hr_border.png") center repeat-x;
 background-size: 2vw 0.3vw;
 height: 9vw;
 }
@@ -414,7 +414,7 @@ width: 90%;
 padding: 180px 0 90px 0;
 }
 #cts:after{
-background:url("/eximages/2021/assets_sub/fade_head.png") center top no-repeat, url("/eximages/2021/assets_sub/fade_foot.png") center bottom no-repeat;
+background:url("/my/img/fade_head.png") center top no-repeat, url("/my/img/fade_foot.png") center bottom no-repeat;
 background-size: 100vw 160px, 100vw 160px;
 }
 
@@ -476,11 +476,11 @@ background: rgba(0, 255, 255, 0.3);*/
 pointer-events: none;
 }
 .menuPC1{
-background: url("/eximages/2021/assets_sub/menu_pc.png") 730px 0% no-repeat;
+background: url("/my/img/menu_pc.png") 730px 0% no-repeat;
 background-size: 138px;
 }
 .menuPC2{
-background: url("/eximages/2021/assets_sub/menu_pc.png") 580px 0% no-repeat;
+background: url("/my/img/menu_pc.png") 580px 0% no-repeat;
 background-size: 138px;
 }
 #menuPC ul{
@@ -503,7 +503,7 @@ display: block;
 width: 160px;
 height: 46px;
 box-sizing: border-box;
-background: url("/eximages/2021/assets_sub/menu_b_pc.png") no-repeat;
+background: url("/my/img/menu_b_pc.png") no-repeat;
 background-size: 160px;
 margin: 3px;
 color: #FFF;
@@ -515,7 +515,7 @@ text-decoration: none;
 }
 
 h1{
-background: url("/eximages/2021/assets_sub/h1border_pc.png") center 66% no-repeat;
+background: url("/my/img/h1border_pc.png") center 66% no-repeat;
 background-size: 100%;
 width: 262px;
 width: 302px;
@@ -530,7 +530,7 @@ dl,dt,dd,.ctsWaku{
 width: 1040px;
 }
 dt,dd,.ctsWakuLoop{
-background: url("/eximages/2021/assets_sub/waku_m_pc.png") center center repeat-y;
+background: url("/my/img/waku_m_pc.png") center center repeat-y;
 background-size: 100%;
 padding: 0 100px;
 }
@@ -559,13 +559,13 @@ font-size: 13px;
 }
 .ttlHR{
 width: 100%;
-background: url("/eximages/2021/assets_sub/hr_border.png") center repeat-x;
+background: url("/my/img/hr_border.png") center repeat-x;
 background-size: 12px 2px;
 height: 20px;
 }
 hr{
 width: 100%;
-background: url("/eximages/2021/assets_sub/hr_border.png") center repeat-x;
+background: url("/my/img/hr_border.png") center repeat-x;
 background-size: 12px 2px;
 height: 60px;
 }
