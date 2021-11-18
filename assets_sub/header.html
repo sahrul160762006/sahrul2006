@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>『映画ドラえもん のび太の宇宙小戦争 2021』公式サイト</title>
+
+<!--jquery
+<script type="text/javascript" src="../library/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../library/jquery-migrate-3.3.2.min.js"></script>
+<script type="text/javascript" src="../library/jquery.easing.min.js"></script>
+-->
+
+<!--webfont-さわらび明朝
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+-->
+
+<!--webfont-Audiowide
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+-->
+
+<!--
+<script type="text/javascript" src="../assets/common.js"></script>
+<link rel="stylesheet" href="../assets/common.css" media="screen,print">
+-->
+
+<script type="text/javascript" src="../library/modaal.js"></script>
+<link rel="stylesheet" href="../library/modaal.css" media="screen,print">
+
+</head>
+
+<body>
+
+
+<a id="headLogo" class="pageMove fade" href="../"><img src="../../eximages/2021/assets_sub/logo.png" alt="映画ドラえもん のび太の宇宙小戦争 2021"/></a>
+
+<!--SPメニュー-->
+<div id="menuSPbg" class="close"></div>
+<div id="menuSPwrap">
+<nav id="menuSP" class="close">
+<a class="btnTheater fade" href="https://theater.toho.co.jp/toho_theaterlist/doraemon2021.html" target="_blank"><p>THEATER</p><span class="newDate" data-date="2021-11-09">劇場情報</span></a>
+<a class="pageMove btnNews fade" href="../news/"><p>NEWS</p><span class="newDate" data-date="2021-11-18">ニュース</span></a>
+<a class="pageMove btnMovie fade" href="../movie/"><p>MOVIE</p><span class="newDate" data-date="2021-11-18">映像</span></a>
+<a class="pageMove btnStory fade" href="../story/"><p>STORY</p><span class="newDate" data-date="2021-05-05">ストーリー</span></a>
+<a class="pageMove btnChara fade" href="../character/"><p>CHARACTER</p><span class="newDate" data-date="2021-11-18">キャラクター</span></a>
+<a class="pageMove btnSong fade" href="../song/"><p>SONG</p><span class="newDate" data-date="2021-11-09">主題歌</span></a>
+<!--a class="pageMove btnCast fade" href="../cast/"><p>CAST/STAFF</p><span class="newDate" data-date="2021-05-05">キャスト スタッフ</span></a--><br>
+<a class="pageMove btnTop fade" href="../"><p>TOP</p><span class="newDate" data-date="2021-05-05">トップ</span></a>
+</nav>
+</div>
+
+<div id="menuSPhm" class="close">
+<div class="hm"></div>
+<div class="hm"></div>
+</div>
+
+<!--PCメニュー-->
+<nav id="menuPC" class="menuPC2">
+<ul>
+<li>
+<a class="btnTheater fade newDate" href="https://theater.toho.co.jp/toho_theaterlist/doraemon2021.html" target="_blank" data-date="2021-11-09">劇場情報</a>
+</li>
+<li>
+<a class="pageMove btnNews fade newDate" href="../news/" data-date="2021-11-18">ニュース</a>
+<a class="pageMove btnMovie fade newDate" href="../movie/" data-date="2021-11-18">映像</a>
+</li>
+<li>
+<a class="pageMove btnStory fade newDate" href="../story/" data-date="2021-05-05">ストーリー</a>
+</li>
+<li>
+<a class="pageMove btnChara fade newDate" href="../character/" data-date="2021-11-18">キャラクター</a>
+<a class="pageMove btnSong fade newDate" href="../song/" data-date="2021-11-09">主題歌</a>
+</li>
+<!--li>
+<a class="pageMove btnCast fade newDate" href="../cast/" data-date="2021-05-05">キャスト スタッフ</a>
+</li-->
+</ul>
+</nav>
+
+<!--映像 予告1
+<div class="modaal" id="movieWin"><div class="modal"><div class="ytWrap">
+<p class="newDate" data-date="2021-7-17">予告</p>
+<iframe class="yt" src="https://www.youtube.com/embed/SRxc6nZKNV0?vq=hd720&rel=0&wmode=transparent&showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div></div></div>-->
+
+<script>
+$(function(){
+
+/////////////////
+//スマホメニュー展開//
+/////////////////
+
+$('#menuSPhm').click(function() {
+
+$(this).toggleClass("open close");
+
+if($(this).hasClass("open")){
+	//gsap.fromTo("#menuSP", {scale:0.8, opacity:0}, {scale:1, opacity:1, delay:0.1, duration: 0.6, ease: Power4.easeOut });
+	$("#menuSPwrap").fadeIn(300);
+	$("#menuSPbg,#menuSP").toggleClass("open close");
+}else{
+	//gsap.fromTo("#menuSP", {scale:1, opacity:1}, {scale:0.8, opacity:0, duration: 0.8, ease: Power4.easeOut });
+	$("#menuSPwrap").fadeOut(300);
+	$("#menuSPbg,#menuSP").toggleClass("open close");
+}
+
+});
+
+$("#menuSPwrap").css({display: "flex"});
+$("#menuSPwrap").delay(100).fadeOut(0);
+
+//commonFunc();
+
+$(".inline").modaal({
+	type: 'inline',	// コンテンツのタイプを指定
+	animation_speed: '30', 	// アニメーションのスピードをミリ秒単位で指定
+	//background: '#001567',	// 背景の色を白に変更
+	overlay_opacity: '1.0',	// 背景のオーバーレイの透明度を変更
+	before_open: function(e) { 
+		resizeYT();
+		openWin();
+	} ,
+	before_close: function(e) {
+		closeWin();
+　}  
+});
+
+});
+</script>
+
+</body>
+</html>
