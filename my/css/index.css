@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+h2{
+font-size:6vw;
+font-weight: normal;
+margin-bottom: 0.5em;
+line-height: 1.4em;
+}
+h2 strong{
+font-size:10vw;
+font-weight: normal;
+display: block;
+}
+hr{
+height: 4vw;
+margin-top: -2vw;
+}
+h3{
+font-family: 'Audiowide', cursive;
+font-size:4.5vw;
+line-height: 1em;
+font-weight: normal;
+margin-top: 10vw;
+}
+h3 span{
+font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+font-size:2.2vw;
+margin-left: 0.5em;
+font-weight: bold;
+}
+/*h3:nth-of-type(2){
+margin-top: 12vw;
+}*/
+.ctsWakuLoop p.profile{
+font-size:2.5vw;
+}
+p strong{
+font-size:3.8vw;
+font-weight: normal;
+}
+p span{
+display: block;
+text-align: right;
+}
+
+/*PC*/
+@media screen and (min-width:835px){
+
+h2{
+font-size: 36px;
+margin-bottom: 0.25em;
+margin-top: 0.5em;
+}
+h2 strong{
+font-size: 58px;
+display: inline;
+}
+hr{
+height: 20px;
+margin-top: -10px;
+}
+h3{
+font-size: 26px;
+margin-top: 60px;
+}
+h3 span{
+font-size: 12px;
+}
+.ctsWakuLoop p.profile{
+font-size:14px;
+}
+p strong{
+font-size: 26px;
+}
+
+}

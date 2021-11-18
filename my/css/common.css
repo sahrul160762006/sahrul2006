@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/*リセット系*/
+*{
+margin:0;
+padding:0;
+border:none;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+img{
+vertical-align:bottom;
+pointer-events: none;
+-ms-interpolation-mode: bicubic;
+}
+a img{
+pointer-events: auto;
+width:100%;
+}
+a:focus, *:focus {
+outline:none;
+}
+html,body {
+height: 100%;
+}
+a{
+cursor: pointer;
+position: relative;
+}
+a img{
+width: 100%;
+}
+body{
+font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+text-align: center;
+}
+.SPhover{
+opacity: 0.7;
+}
+/*スマホメニュー展開で背景固定
+html.is-fixed,
+html.is-fixed body {
+height: 100%;
+overflow: hidden;
+}*/
+
+#loaderWrap{
+position: fixed;
+z-index: 100;
+width: 100vw;
+/*隠すため（実際はjsで高さ計算）
+height: 120vh;*/
+background: #001050;
+/*background: url("/eximages/2021/images/borderbg.png") #001567;
+background-size: 8px;*/
+}
+#loader{
+position: absolute;
+width: 20vw;
+/*初期設定（実際はjsで高さ計算）
+top:50vh;*/
+left: 40vw;
+margin-top: -10vw;
+opacity: 0.3;
+animation: pika2 0.06s infinite alternate;
+}
+@keyframes pika2{
+  from{opacity: 0.3;} 
+  to{opacity:0.2;}
+}
+
+.pc{
+display: none;
+}
+
+.mincho{
+font-family: "Sawarabi Mincho";
+}
+.ytWrap p{
+font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+font-size:4.6vw;
+font-weight: bold;
+color: #b9fffc;
+margin-bottom: 1vw;
+text-align: center;
+}
+.ytWrap .newMark{
+font-size:3vw;
+}
+.yt{
+width: 95%;
+margin-left: 2.5vw;
+/*height: 50.625vw;*/
+/*border: solid 0.6vw #b9fffc;*/
+/*box-sizing: border-box;*/
+/*border-radius: 5vw;*/
+
+background: #b9fffc;
+box-shadow: 0.5vw 0.5vw 2vw rgba(185, 252, 255, 0.4),
+-0.5vw 0.5vw 2vw rgba(185, 252, 255, 0.4),
+0.5vw -0.5vw 2vw rgba(185, 252, 255, 0.4),
+-0.5vw -0.5vw 2vw rgba(185, 252, 255, 0.4);
+border: solid 0.6vw #b9fffc;
+}
+.modaal{
+display: none;
+}
+.modaal-close,
+.popupClose{
+position: fixed;
+right: 2vw;
+top: 2vw;
+cursor: pointer;
+opacity: 1;
+width: 15vw;
+height: 15vw;
+background: url("/eximages/2021/images/btn_close2.png") center center no-repeat;
+background-size: 15vw 15vw;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+font-size: 0;
+}
+.modaal-close:focus,
+.modaal-close:hover,
+.popupClose:focus,
+.popupClose:hover{
+opacity: 0.7;
+}
+.newMark{
+color: #FF0;
+font-size: 2vw;
+font-weight: bold;
+padding-right: 0.3em;
+}
+
+
+/*PC*/
+@media screen and (min-width:835px){
+
+body{
+min-width: 1120px;
+}
+.sp{
+display: none;
+}
+.pc{
+display: block;
+}
+#loader{
+position: absolute;
+width: 100px;
+left: 50vw;
+margin-top: -50px;
+margin-left: -50px;
+}
+.ytWrap p{
+margin-bottom: 5px;
+font-size:24px;
+}
+.ytWrap .newMark{
+font-size:16px;
+}
+.yt{
+/*border: solid 4px #b9fffc;
+-webkit-box-shadow: 0 0 15px 0 #b9fffc , 0 0 2px 0 #b9fffc;
+-moz-box-shadow: 0 0 15px 0 #b9fffc , 0 0 2px 0 #b9fffc;
+box-shadow: 0 0 15px 0 #b9fffc , 0 0 2px 0 #b9fffc;*/
+/*border-radius: 40px;*/
+box-shadow: 5px 5px 15px rgba(185, 252, 255, 0.4),
+-5px 5px 15px rgba(185, 252, 255, 0.4),
+5px -5px 15px rgba(185, 252, 255, 0.4),
+-5px -5px 15px rgba(185, 252, 255, 0.4);
+border: solid 4px #b9fffc;
+}
+.modaal-close,
+.popupClose{
+right: 20px;
+top: 20px;
+width: 100px;
+height: 100px;
+background: url("/eximages/2021/images/btn_close2.png") center center no-repeat;
+background-size: 100px 100px;
+}
+.newMark{
+font-size: 10px;
+}
+
+}
+
+/*PC3*/
+@media screen and (min-width:1245px){
+
+.yt{
+height: 630px;
+}
+
+}
